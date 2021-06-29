@@ -86,12 +86,12 @@ const answers = [
 function assessment(userName){
   //todo 診断結果を実装する
   //全文字のコード番号を足し合わせる
-let sumOfChraCode = 0;
-  for (let i = 0; i >= userName.length; i++){
-    sumOfChraCode = sumOfChraCode + userName.charCodeAt(i);
-  }
+let sumOfcharCode = 0;
+  for (let i = 0; i < userName.length; i++) {
+    sumOfcharCode = sumOfcharCode + userName.charCodeAt(i);
+    }
   // 文字コードの番号の合計を回答の数で割り余りを求める
-  const index = sumOfChraCode % answers.length;
+  const index = sumOfcharCode % answers.length;
   let result = answers[index];
   result = result.replaceAll('{userName}', userName);
   // TODO {userName} をユーザーの名前に置き換える
