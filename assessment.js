@@ -89,12 +89,12 @@ function assessment(userName){
 let sumOfcharCode = 0;
   for (let i = 0; i < userName.length; i++) {
     sumOfcharCode = sumOfcharCode + userName.charCodeAt(i);
-      console.log(sumOfcharCode);
+     // console.log(sumOfcharCode);
     }
   // 文字コードの番号の合計を回答の数で割り余りを求める
   const index = sumOfcharCode % answers.length;
   let result = answers[index];
-    console.log(result);
+   // console.log(result);
   result = result.replaceAll('{userName}', userName);
   // TODO {userName} をユーザーの名前に置き換える
   return result;
