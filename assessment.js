@@ -87,7 +87,7 @@ function assessment(userName){
   //todo 診断結果を実装する
   //全文字のコード番号を足し合わせる
 let sumOfChraCode = 0;
-  for (let i = 0; i >= userName.length; i++){
+  for (let i = 0; i < userName.length; i++){
     sumOfChraCode = sumOfChraCode + userName.charCodeAt(i);
   }
   // 文字コードの番号の合計を回答の数で割り余りを求める
